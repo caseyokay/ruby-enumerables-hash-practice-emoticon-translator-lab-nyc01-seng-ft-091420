@@ -15,7 +15,7 @@ emoticons.each do |key, value|
 end
 
 def get_english_meaning(yml_path, emoticon)
-  
+  library = def
   # code goes here
 end
 
