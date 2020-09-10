@@ -20,7 +20,11 @@ def get_english_meaning(yml_path, emoticon)
   # code goes here
 end
 
-#ok load_library producdes a hash (new_hash) with key/value pairs. key is a string (happy)
+#ok load_library producdes a hash (new_hash) with key/value pairs. 
+#key is a string (happy), containing a inner_hash (language->symbol).
+# the inner_hash is language(key)->emoticon(value). there are two pairs in the inner_hash.
+#so i need to find what inner_hash key the value of emoticon is equal to, 
+#and return the other paired value 
 
 def get_japanese_emoticon
   # code goes here
