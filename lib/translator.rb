@@ -14,6 +14,8 @@ emoticons.each do |key, value|
   new_hash
 end
 
+
+
 def get_english_meaning(yml_path, emoticon)
   library = load_library(yml_path)
   emoticon = library.keys.find do |key|
