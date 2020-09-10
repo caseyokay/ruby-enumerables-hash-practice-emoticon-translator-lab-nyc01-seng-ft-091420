@@ -24,6 +24,7 @@ def get_english_meaning(yml_path, emoticon)
 
   emoticon = library.keys.find do |key|
     # library[key][:japanese] == emoticon
+    library.key(emoticon) => key 
   end
   emoticon ? emoticon : "Sorry, value not found!"
   binding.pry
