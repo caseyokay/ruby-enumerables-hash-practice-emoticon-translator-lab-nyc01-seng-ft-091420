@@ -34,7 +34,11 @@ end
 #so i need to find what inner_hash key the value of emoticon is equal to, 
 #and return the other paired value 
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(yml_path, emoticon)
+  library = load_library(yml_path)
+  emoticon = library.keys.find do |key|
+    library[key][:english] == emoticon
+  end
+  emoticon ? emoticon : "Sorry, value not found!"
 end
 
