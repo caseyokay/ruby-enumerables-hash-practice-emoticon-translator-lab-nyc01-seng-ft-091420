@@ -16,17 +16,15 @@ end
 
 def get_english_meaning(yml_path, emoticon)
   library = load_library(yml_path)
-#   if emoticon == new_hash[:japanese]
-#   # code goes here
-#hash.key(value) => key
-
-# end
-
   emoticon = library.keys.find do |key|
     library[key][:japanese] == emoticon
   end
   emoticon ? emoticon : "Sorry, value not found!"
 end
+
+#   if emoticon == new_hash[:japanese]
+#   # code goes here
+#hash.key(value) => key
 
 #ok load_library producdes a hash (new_hash) with key/value pairs. 
 #key is a string (happy), containing a inner_hash (language->symbol).
