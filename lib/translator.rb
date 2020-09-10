@@ -15,7 +15,8 @@ emoticons.each do |key, value|
 end
 
 def get_english_meaning(yml_path, emoticon)
-  library = def
+  library = load_library(yml_path)
+  if new_hash[:japanese]
   # code goes here
 end
 
