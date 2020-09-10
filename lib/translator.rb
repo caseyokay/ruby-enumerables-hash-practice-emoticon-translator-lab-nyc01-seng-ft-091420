@@ -27,7 +27,6 @@ def get_english_meaning(yml_path, emoticon)
     library.key(emoticon) => key 
   end
   emoticon ? emoticon : "Sorry, value not found!"
-  binding.pry
 end
 
 #ok load_library producdes a hash (new_hash) with key/value pairs. 
