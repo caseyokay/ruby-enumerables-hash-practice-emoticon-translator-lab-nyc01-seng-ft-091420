@@ -20,6 +20,8 @@ def get_english_meaning(yml_path, emoticon)
   # code goes here
 end
 
+#ok load_library producdes a hash (new_hash) with key/value pairs. key is a string (happy)
+
 def get_japanese_emoticon
   # code goes here
 end
