@@ -23,7 +23,8 @@ def get_english_meaning(yml_path, emoticon)
   emoticon = library.keys.find do |key|
     library[key][:japanese] == emoticon
   end
-  emoticon ? emoticon : "Sorry, that emoticon was not found"
+  emoticon ? emoticon : "Sorry, value not found!"
+  binding.pry
 end
 
 #ok load_library producdes a hash (new_hash) with key/value pairs. 
