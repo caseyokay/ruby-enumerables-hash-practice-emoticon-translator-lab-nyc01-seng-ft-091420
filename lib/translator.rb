@@ -21,7 +21,7 @@ def get_english_meaning(yml_path, emoticon)
     emoticon = library.keys.find do |key|
     library[key][:japanese] == emoticon
   end
-  emoticon ? emoticon : "Sorry, that emoticon was not found"
+  emoticon ? emoticon : "sorry, not found!"
 end
 
 #   if emoticon == new_hash[:japanese]
@@ -39,5 +39,5 @@ def get_japanese_emoticon(yml_path, emoticon)
  emoticon = library.keys.find do |key|
     library[key][:english] == emoticon
   end
-  emoticon ? library[emoticon][:japanese] : "Sorry, that emoticon was not found"
+  emoticon ? library[emoticon][:japanese] : "sorry, not found!"
 end
