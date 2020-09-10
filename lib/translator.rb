@@ -18,6 +18,8 @@ def get_english_meaning(yml_path, emoticon)
   library = load_library(yml_path)
 #   if emoticon == new_hash[:japanese]
 #   # code goes here
+#hash.key(value) => key
+
 # end
 
   emoticon = library.keys.find do |key|
