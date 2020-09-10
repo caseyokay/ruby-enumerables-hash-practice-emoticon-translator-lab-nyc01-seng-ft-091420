@@ -16,7 +16,7 @@ end
 
 def get_english_meaning(yml_path, emoticon)
   library = load_library(yml_path)
-  if new_hash[:japanese]
+  if emoticon == new_hash[:japanese]
   # code goes here
 end
 
