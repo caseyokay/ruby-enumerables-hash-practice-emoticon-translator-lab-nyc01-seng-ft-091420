@@ -1,4 +1,5 @@
 # require modules here
+require "pry"
 require "yaml"
 
 def load_library(yml_path)
@@ -8,6 +9,7 @@ new_hash = {}
 emoticons.each do |key, value|
   new_hash[key] = {}
 end
+binding.pry
 new_hash
 end
 
