@@ -16,8 +16,14 @@ end
 
 def get_english_meaning(yml_path, emoticon)
   library = load_library(yml_path)
-  if emoticon == new_hash[:japanese]
-  # code goes here
+#   if emoticon == new_hash[:japanese]
+#   # code goes here
+# end
+
+  emoticon = library.keys.find do |key|
+    library[key][:japanese] == emoticon
+  end
+  emoticon ? emoticon : "Sorry, that emoticon was not found"
 end
 
 #ok load_library producdes a hash (new_hash) with key/value pairs. 
