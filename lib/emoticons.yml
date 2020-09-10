@@ -37,3 +37,10 @@ surprised:
 wink:
   - ";)"
   - "(^_-)"
+  
+
+
+require "yaml"
+emoticons = YAML.load_file('emoticons.yml')
+ 
+emoticons
